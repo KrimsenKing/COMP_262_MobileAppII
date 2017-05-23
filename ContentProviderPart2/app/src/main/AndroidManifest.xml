@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scherr3143.contentproviderpart2">
+
+    <permission android:name="com.example.scherr3143.contentproviderpart2.Books.read"/>
+    <permission android:name="com.example.scherr3143.contentproviderpart2.Books.write"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:exported="true"
+            android:readPermission="com.example.scherr3143.contentproviderpart2.Books.read"
+            android:writePermission="com.example.scherr3143.contentproviderpart2.Books.write"
+            android:name="BooksProvider"
+            android:authorities="com.example.scherr3143.contentproviderpart2.Books" >
+        </provider>
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+Android 2.1
+Build Number: AI-143.2915827
+Android SDK Tools: 25.2.3
+Platform Version: API 25 revision 2
+
+SDK: 23,22,19
+
+Try this for Android:
+https://code.tutsplus.com/tutorials/android-fundamentals-intentservice-basics--mobile-6183

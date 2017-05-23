@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scherr3143.contentprovider_downloadservice">
+
+    <permission android:name="com.example.scherr3143.contentprovider_downloadservice.urlContentProvider.read"/>
+    <permission android:name="com.example.scherr3143.contentprovider_downloadservice.urlContentProvider.write"/>
+
+    <uses-permission android:name="com.example.scherr3143.websiteimagegui.MainActivity.read"/>
+    <uses-permission android:name="com.example.scherr3143.websiteimagegui.MainActivity.write"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name="com.example.scherr3143.contentprovider_downloadservice.MainActivity"
+            android:exported="true"
+            android:enabled="true">
+        </service>
+        <provider
+            android:exported="true"
+            android:readPermission="com.example.scherr3143.contentprovider_downloadservice.urlContentProvider.read"
+            android:writePermission="com.example.scherr3143.contentprovider_downloadservice.urlContentProvider.write"
+            android:authorities="com.example.scherr3143.contentprovider_downloadservice.urlContentProvider"
+            android:name=".urlContentProvider">
+        </provider>
+    </application>
+
+</manifest>

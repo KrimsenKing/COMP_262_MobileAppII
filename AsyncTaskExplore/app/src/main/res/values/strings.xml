@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AsyncTaskExplore</string>
+    <string name="download_btn">Download</string>
+    <string name="progress">downloading 0%</string>
+    <string name="async_callbacks">call backs</string>
+    <string name="clear_btn">Clear Display</string>
+</resources>
