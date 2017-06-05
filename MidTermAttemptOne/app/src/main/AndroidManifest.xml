@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.scherr3143.midtermattemptone">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".downloadService"
+            android:exported="true"/>
+        <provider
+            android:authorities="com.example.scherr3143.midtermattemptone.urlContentProvider.sites"
+            android:name="com.example.scherr3143.midtermattemptone.urlContentProvider" />
     </application>
 
 </manifest>

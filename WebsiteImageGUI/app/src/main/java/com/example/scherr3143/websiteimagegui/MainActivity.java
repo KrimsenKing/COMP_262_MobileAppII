@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
         Intent urlIntent = new Intent();
 
         urlIntent.setAction(Intent.ACTION_SEND);
-        String pkg = "com.example.scherr3143.contentprovider_downloadservice";
-        String cls = "com.example.scherr3143.contentprovider_downloadservice.DownloadService";
-        urlIntent.setComponent(new ComponentName(pkg,cls));
+        //String pkg = "com.example.scherr3143.contentprovider_downloadservice";
+        //String cls = "com.example.scherr3143.contentprovider_downloadservice.DownloadService";
+        //urlIntent.setComponent(new ComponentName(pkg,cls));
         urlIntent.putExtra("url",url);
-        startActivity(urlIntent);
+        startService(urlIntent);
 
     }
 }
